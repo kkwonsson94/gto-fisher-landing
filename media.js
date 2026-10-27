@@ -1,0 +1,8 @@
+// Replace only story / mobileStory / poster when the final product edits are ready.
+// Character loops and atmosphere are separate from the product story.
+export const roles = [
+  { id: 'coach', title: 'Personal Coach', character: 'C2', story: 'assets/stories/coach.mp4', mobileStory: 'assets/stories/coach-mobile.mp4', poster: 'assets/stories/coach.jpg', caption: 'Find the decision that mattered.', steps: 'Share a hand → Review the spot → Understand why', placeholder: 'An existing hand review demo is shown as a placeholder' },
+  { id: 'solver', title: 'Solver Expert', character: 'S1', story: 'assets/stories/solver.mp4', mobileStory: 'assets/stories/solver-mobile.mp4', poster: 'assets/stories/solver.jpg', caption: 'Turn your read into a strategy adjustment.', steps: 'Share your read → Node Lock → Compare strategies', placeholder: 'An existing exploitative strategy demo is shown as a placeholder' },
+  { id: 'analyst', title: 'Strategy Analyst', character: 'A3', story: 'assets/stories/analyst.mp4', mobileStory: 'assets/stories/analyst-mobile.mp4', poster: 'assets/stories/analyst.jpg', caption: 'See how each turn changes your strategy.', steps: 'Ask a question → Run reports → Spot the patterns', placeholder: 'A Solver demo is shown for now; the final video will demonstrate turn aggregation reports' },
+  { id: 'training', title: 'Training Partner', character: 'T1', story: 'assets/stories/training.mp4', mobileStory: 'assets/stories/training-mobile.mp4', poster: 'assets/stories/training.jpg', caption: 'Every decision is a chance to learn.', steps: 'Make a decision → Get feedback → Ask why', placeholder: 'A training plan demo is shown for now; the final video will demonstrate coaching during practice' },
+];

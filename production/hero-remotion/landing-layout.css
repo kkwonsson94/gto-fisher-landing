@@ -1,0 +1,32 @@
+/* Local review only. Keep the original typography, film and independent Fisher. */
+.hero-product-compact {
+  --agent-top: clamp(140px, 24svh, 280px);
+  --intro-gap-top: clamp(180px, 24svh, 340px);
+  --intro-gap-bottom: max(240px, 40svh);
+}
+.hero-product-compact .hero-heading > .button { margin-top: 24px; }
+.hero-product-compact .hero-film { margin-top: 16px; }
+.hero-product-compact .hero-agent-track {
+  top: var(--hero-agent-anchor, 310px);
+}
+.hero-product-compact .hero-agent-card {
+  width: min(31%, calc((100svh - var(--header) - 48px) * .78));
+  margin-right: 0;
+}
+.hero-product-compact .hero-introduction {
+  padding-block: var(--intro-gap-top) var(--intro-gap-bottom);
+}
+.hero-product-compact .intro-atmosphere { top: calc(var(--intro-gap-top) - 160px); }
+/* The deleted intro no longer needs a 290px offset above the chapter atmosphere. */
+.hero-product-compact + .abilities .roles-atmosphere { top: 0; }
+@media (max-width: 600px) {
+  .hero-product-compact {
+    --agent-top: clamp(112px, 24svh, 210px);
+    --intro-gap-top: 96px;
+    --intro-gap-bottom: max(160px, 60svh);
+  }
+  .hero-product-compact .hero-heading > .button { margin-top: 20px; }
+  .hero-product-compact .hero-film { margin-top: 24px; }
+  .hero-product-compact .hero-agent-track { top: var(--hero-agent-anchor, 230px); }
+  .hero-product-compact .intro-atmosphere { top: calc(var(--intro-gap-top) - 110px); }
+}

@@ -1,0 +1,14 @@
+node_modules/
+.env
+.env.*
+*.log
+.DS_Store
+Thumbs.db
+preview/
+**/out/
+**/dist/
+**/public/hero-screens/
+**/public/product-screens/
+**/public/brand/
+**/public/inter.woff2
+**/public/fisher-logo-blue.png

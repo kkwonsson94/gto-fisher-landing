@@ -1,0 +1,5 @@
+#hero-overview { background: #061426; }
+#hero-live-preview { position: absolute; inset: 0; z-index: 1; pointer-events: none;
+  visibility: hidden; mask-image: linear-gradient(90deg, #000 0%, #000 94%, transparent 100%); }
+#hero-overview[data-preview-ready="true"] #hero-live-preview { visibility: visible; }
+#hero-overview[data-preview-ready="true"] > .hero-product-video { visibility: hidden; }

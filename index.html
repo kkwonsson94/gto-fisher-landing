@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#061426">
+  <meta name="description" content="Meet Fisher, your AI poker companion. Review hands, test your reads with a real-time solver, explore strategy, and learn as you practice.">
+  <title>Meet Fisher · Your AI Poker Companion</title>
+  <link rel="icon" href="assets/fisher-logo.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/inter.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="hero.css">
+  <link rel="stylesheet" href="hero-motion.css">
+  <link rel="stylesheet" href="discovery.css">
+  <link rel="stylesheet" href="solver.css">
+  <script src="hero-motion.js" type="module"></script>
+  <script src="solver.js" type="module"></script>
+</head>
+<body>
+  <a class="skip-link" href="#abilities">Skip to Fisher’s capabilities</a>
+  <header class="site-header">
+    <a class="wordmark" href="#home" aria-label="GTO Fisher home"><img src="assets/fisher-logo.svg" alt="" width="30" height="30"><span>GTO <strong>Fisher</strong></span></a>
+    <nav aria-label="Main navigation"><a class="nav-active" href="#home">Meet Fisher</a><a href="#abilities">What Fisher can do</a><a href="#solver-product">Solver</a></nav>
+    <a class="solver-mobile-link" href="#solver-product">Solver <span aria-hidden="true">↘</span></a>
+    <a class="button button-small button-quiet" href="#coach">See Fisher in action <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero hero-product hero-product-compact" id="home" aria-labelledby="hero-title">
+      <div class="hero-heading container">
+        <h1 id="hero-title">Your solver-powered<br><span>AI Poker Agent</span></h1>
+        <a class="button button-primary" href="#meet-fisher">Meet Fisher <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+      </div>
+
+      <figure class="hero-film container" aria-labelledby="hero-film-description">
+        <div class="hero-film-surface hero-film-surface-video" id="hero-overview" data-static="false">
+          <img class="hero-film-static" src="assets/hero-film/gto-fisher-product-overview-v6-end.jpg" alt="Complete GTO Fisher Solver interface showing its strategy matrix, poker table, combination details, action summary and brand logo." width="1920" height="1080">
+          <video class="hero-product-video" id="hero-product-video" muted playsinline preload="auto" poster="assets/hero-film/gto-fisher-product-overview-v6-poster.jpg" width="1920" height="1080" aria-label="GTO Fisher product overview">
+            <source src="assets/hero-film/gto-fisher-product-overview-v6.mp4" type="video/mp4">
+          </video>
+        </div>
+        <figcaption id="hero-film-description" class="visually-hidden">An eight-second overview of Solver, equity, reports, solutions and Fisher AI. Product screens unfold and combine into the Solver workspace, ending on the GTO Fisher brand logo and name.</figcaption>
+        <progress class="hero-film-progress" max="8" value="0" aria-label="Product overview progress"></progress>
+        <div class="hero-film-controls">
+          <button class="replay-film subtle-control" type="button" aria-label="Replay product overview" disabled><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10a8 8 0 1 1 1 7M4 4v6h6"/></svg>Replay overview</button>
+          <button class="pause-film subtle-control" type="button" aria-label="Pause product overview" aria-pressed="false" disabled><span aria-hidden="true">Ⅱ</span><span class="pause-film-label">Pause</span></button>
+        </div>
+        <p class="overview-status visually-hidden" role="status" aria-live="polite"></p>
+        <noscript><style>.hero-product-video{display:none}.hero-film-static{visibility:visible}</style></noscript>
+      </figure>
+
+      <div class="hero-introduction container" id="meet-fisher" aria-labelledby="meet-fisher-title">
+        <div class="atmosphere intro-atmosphere" aria-hidden="true">
+          <video muted loop playsinline preload="none" poster="assets/atmosphere/rays-poster.jpg" data-src="assets/atmosphere/rays.mp4" data-ambient></video>
+        </div>
+        <h2 id="meet-fisher-title"><span>Meet Fisher.</span><span>Your poker study team.</span><span>In one AI agent.</span></h2>
+      </div>
+
+      <div class="hero-agent-track container">
+        <div class="hero-agent-sticky">
+          <aside class="hero-agent-card" aria-label="Meet Fisher, your AI poker agent">
+            <p class="hero-agent-intro">Hey, I’m Fisher.<br><strong>Your AI poker agent.</strong></p>
+            <div class="hero-agent-media">
+              <img class="hero-agent-poster" src="assets/hero/boat-loop-clean-v4-poster.png" alt="Fisher in a little fishing boat" width="1080" height="1080">
+              <video id="hero-loop" muted loop playsinline preload="auto" aria-label="Fisher waves, hops ashore and returns to his boat"><source src="assets/hero/boat-loop-clean-v4.webm" type="video/webm"></video>
+            </div>
+            <a class="hero-agent-link" href="#abilities">See what we can do <span aria-hidden="true">↓</span></a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="abilities" id="abilities" aria-labelledby="abilities-title">
+      <h2 id="abilities-title" class="visually-hidden">What Fisher can do</h2>
+      <nav class="role-navigation" aria-label="Explore Fisher’s roles"><div class="role-tabs container">
+        <a href="#coach" class="role-tab is-active" aria-current="location"><span class="role-icon" aria-hidden="true">♧</span><span class="role-tab-label">Personal Coach</span></a>
+        <a href="#solver" class="role-tab"><span class="role-icon" aria-hidden="true">♤</span><span class="role-tab-label">Solver Expert</span></a>
+        <a href="#analyst" class="role-tab"><span class="role-icon" aria-hidden="true">♢</span><span class="role-tab-label">Strategy Analyst</span></a>
+        <a href="#training" class="role-tab"><span class="role-icon" aria-hidden="true">♡</span><span class="role-tab-label">Training Partner</span></a>
+      </div></nav>
+      <div class="roles-atmosphere atmosphere" aria-hidden="true"><div class="role-glow"></div><div class="grain"></div></div>
+      <div class="role-layout container">
+        <div class="role-chapters">
+          <article class="role-chapter is-active" id="coach" data-role="coach">
+            <div class="chapter-copy"><p class="eyebrow">YOUR PERSONAL COACH</p><h3>Review the hand.<br>Understand the why.</h3><p class="chapter-description">Share a hand screenshot and ask what’s on your mind. Fisher combines real-time solving with poker knowledge to break down key decisions and explain the reasoning.</p><a class="question-link" href="#coach" data-open-story="coach"><span class="question-mark" aria-hidden="true">“</span>Did I misplay this hand?<span aria-hidden="true">↗</span></a><div class="chapter-tags"><span>Hand screenshots</span><span>Solver insights</span><span>Clear explanations</span></div></div>
+            <figure class="role-character"><video muted loop playsinline preload="metadata" poster="assets/roles/C2.png" data-character="coach"><source src="assets/roles/C2.mp4" type="video/mp4"></video><figcaption>Personal Coach</figcaption></figure>
+            <div class="mobile-story-slot"></div>
+          </article>
+          <article class="role-chapter" id="solver" data-role="solver">
+            <div class="chapter-copy"><p class="eyebrow">YOUR SOLVER EXPERT</p><h3>Have a read?<br>Put it to the test.</h3><p class="chapter-description">Tell Fisher what you’ve noticed about your opponent. He sets up a node lock, runs the solver, and compares strategies so you can see how to adjust.</p><a class="question-link" href="#solver" data-open-story="solver"><span class="question-mark" aria-hidden="true">“</span>They’re underbluffing. How should I adjust?<span aria-hidden="true">↗</span></a><div class="chapter-tags"><span>Natural language</span><span>Node Lock</span><span>Strategy comparison</span></div></div>
+            <figure class="role-character"><video muted loop playsinline preload="metadata" poster="assets/roles/S1.png" data-character="solver"><source src="assets/roles/S1.mp4" type="video/mp4"></video><figcaption>Solver Expert</figcaption></figure>
+            <div class="mobile-story-slot"></div>
+          </article>
+          <article class="role-chapter" id="analyst" data-role="analyst">
+            <div class="chapter-copy"><p class="eyebrow">YOUR STRATEGY ANALYST</p><h3>See what the<br>next card changes.</h3><p class="chapter-description">Explore more than one runout. Fisher runs aggregate reports, compares how turn cards affect ranges and strategy, and helps you spot the patterns.</p><a class="question-link" href="#analyst" data-open-story="analyst"><span class="question-mark" aria-hidden="true">“</span>Which turn cards favor my range?<span aria-hidden="true">↗</span></a><div class="chapter-tags"><span>Aggregate reports</span><span>Range advantage</span><span>Board patterns</span></div></div>
+            <figure class="role-character"><video muted loop playsinline preload="metadata" poster="assets/roles/A3.png" data-character="analyst"><source src="assets/roles/A3.mp4" type="video/mp4"></video><figcaption>Strategy Analyst</figcaption></figure>
+            <div class="mobile-story-slot"></div>
+          </article>
+          <article class="role-chapter" id="training" data-role="training">
+            <div class="chapter-copy"><p class="eyebrow">YOUR TRAINING PARTNER</p><h3>Every rep.<br>A little wiser.</h3><p class="chapter-description">Know why a decision works—and what to rethink when it doesn’t. Fisher gives feedback as you practice, with answers about the hand whenever you need them.</p><a class="question-link" href="#training" data-open-story="training"><span class="question-mark" aria-hidden="true">“</span>Why shouldn’t I keep betting here?<span aria-hidden="true">↗</span></a><div class="chapter-tags"><span>Instant feedback</span><span>Ask as you play</span><span>Learn by doing</span></div></div>
+            <figure class="role-character"><video muted loop playsinline preload="metadata" poster="assets/roles/T1.png" data-character="training"><source src="assets/roles/T1.mp4" type="video/mp4"></video><figcaption>Training Partner</figcaption></figure>
+            <div class="mobile-story-slot"></div>
+          </article>
+        </div>
+        <div class="story-column"><div class="story-sticky">
+          <div class="story-stage" id="story-stage" aria-label="Fisher product demo">
+            <div class="stage-orbit atmosphere" aria-hidden="true"></div>
+            <div class="story-surface">
+              <div class="story-topline"><span><img src="assets/fisher-logo.svg" width="15" height="15" alt=""> FISHER IN ACTION</span><span class="placeholder-label">Product story · Placeholder</span></div>
+              <div class="story-panels" id="story-panels"></div>
+              <div class="hidden-story-label" aria-hidden="true"><span>PRODUCT STORY</span><p>Your next product story goes here.</p></div>
+              <div class="story-bottomline"><span id="story-caption">Find the decision that mattered.</span><button class="expand-story" type="button" aria-label="Expand the current product demo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></svg></button></div>
+            </div>
+            <div class="story-footnote"><span class="story-step" id="story-step">Share a hand → Review the spot → Understand why</span><span class="story-count"><b id="story-number">01</b> / 04</span></div>
+          </div>
+        </div></div>
+      </div>
+    </section>
+
+    <section class="solver-product" id="solver-product" aria-labelledby="solver-product-title">
+      <div class="container">
+        <div class="solver-section-label"><p class="eyebrow">THE FISHER SOLVER</p><span>CFR + NEURAL NETWORKS</span></div>
+        <div class="solver-heading">
+          <h2 id="solver-product-title">Serious solving.<br><span>Zero slowdown.</span></h2>
+          <div class="solver-heading-copy">
+            <p>Follow your curiosity, not a loading bar. Explore GTO strategies, test your reads, and understand the decisions behind every range.</p>
+            <a class="solver-text-link" href="#solver-workspace">Explore the solver <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+        <dl class="solver-performance" aria-label="Solver performance">
+          <div><dt>Flop &amp; turn solves</dt><dd>&lt; 0.5<span>s</span></dd></div>
+          <div><dt>River solves</dt><dd>&lt; 0.1<span>s</span></dd></div>
+          <div><dt>Exploitability</dt><dd>&lt; 0.4<span>%</span></dd></div>
+          <div class="solver-engine"><dt>Built for deeper study</dt><dd>CFR precision.<br>Neural network speed.</dd></div>
+        </dl>
+        <p class="solver-benchmark-note">GTO Fisher performance figures. Solve times and exploitability vary by spot and configuration.</p>
+
+        <div class="solver-workspace" id="solver-workspace">
+          <div class="solver-workspace-bar">
+            <span class="solver-workspace-name"><span class="solver-live-dot" aria-hidden="true"></span>A closer look at your game</span>
+            <span class="solver-workspace-context">CASH / 100 BB / 6-MAX</span>
+          </div>
+          <div class="solver-view-tabs" role="tablist" aria-label="Solver workspace views">
+            <button id="solver-tab-strategy" type="button" role="tab" aria-selected="true" aria-controls="solver-view-strategy" tabindex="0" data-solver-tab="strategy">Strategy</button>
+            <button id="solver-tab-equity" type="button" role="tab" aria-selected="false" aria-controls="solver-view-equity" tabindex="-1" data-solver-tab="equity">Range &amp; equity</button>
+            <button id="solver-tab-groups" type="button" role="tab" aria-selected="false" aria-controls="solver-view-groups" tabindex="-1" data-solver-tab="groups">Strategy groups</button>
+            <button id="solver-tab-reports" type="button" role="tab" aria-selected="false" aria-controls="solver-view-reports" tabindex="-1" data-solver-tab="reports">Aggregate reports</button>
+          </div>
+          <div class="solver-views">
+            <figure id="solver-view-strategy" class="solver-view" role="tabpanel" aria-labelledby="solver-tab-strategy" tabindex="0">
+              <button class="solver-screen-button" type="button" data-solver-image="strategy" aria-label="Enlarge the strategy workspace screenshot">
+                <img src="assets/solver/strategy-1920.webp" srcset="assets/solver/strategy-960.webp 960w, assets/solver/strategy-1920.webp 1920w" sizes="(max-width: 800px) 94vw, 90vw" width="2559" height="1187" alt="Fisher Study showing the BB strategy on a 4 diamond, 2 heart, 4 club flop, with a range matrix, action frequencies and individual KQ combinations." loading="lazy">
+                <span class="solver-enlarge" aria-hidden="true">View full screen ↗</span>
+              </button>
+              <figcaption><strong>Every combo. Every option.</strong><span>Explore action frequencies, bet sizes and individual combinations in one workspace.</span></figcaption>
+            </figure>
+            <figure id="solver-view-equity" class="solver-view" role="tabpanel" aria-labelledby="solver-tab-equity" tabindex="0" hidden>
+              <button class="solver-screen-button" type="button" data-solver-image="equity" aria-label="Enlarge the range and equity screenshot">
+                <img src="assets/solver/equity-1920.webp" srcset="assets/solver/equity-960.webp 960w, assets/solver/equity-1920.webp 1920w" sizes="(max-width: 800px) 94vw, 90vw" width="2559" height="1187" alt="BTN and BB ranges side by side, EV, equity and equity realization comparisons, equity distribution curves and blocker effects." loading="lazy">
+                <span class="solver-enlarge" aria-hidden="true">View full screen ↗</span>
+              </button>
+              <figcaption><strong>See both sides of the hand.</strong><span>Compare ranges, equity distributions, EV and blockers to understand where an advantage comes from.</span></figcaption>
+            </figure>
+            <figure id="solver-view-groups" class="solver-view" role="tabpanel" aria-labelledby="solver-tab-groups" tabindex="0" hidden>
+              <button class="solver-screen-button" type="button" data-solver-image="groups" aria-label="Enlarge the strategy groups screenshot">
+                <img src="assets/solver/groups-1920.webp" srcset="assets/solver/groups-960.webp 960w, assets/solver/groups-1920.webp 1920w" sizes="(max-width: 800px) 94vw, 90vw" width="2559" height="1187" alt="Fisher Strategy Group view showing strategy by hand category, a filtered matrix, action frequencies, hand strength and draw filters." loading="lazy">
+                <span class="solver-enlarge" aria-hidden="true">View full screen ↗</span>
+              </button>
+              <figcaption><strong>Find the logic inside the range.</strong><span>Group hands by strength and draws, then see how each part of the range plays.</span></figcaption>
+            </figure>
+            <figure id="solver-view-reports" class="solver-view" role="tabpanel" aria-labelledby="solver-tab-reports" tabindex="0" hidden>
+              <button class="solver-screen-button" type="button" data-solver-image="reports" aria-label="Enlarge the aggregate report screenshot">
+                <img src="assets/solver/reports-1920.webp" srcset="assets/solver/reports-960.webp 960w, assets/solver/reports-1920.webp 1920w" sizes="(max-width: 800px) 94vw, 90vw" width="2559" height="1187" alt="An aggregate report with rows of different flop boards and columns showing check and bet-size frequencies." loading="lazy">
+                <span class="solver-enlarge" aria-hidden="true">View full screen ↗</span>
+              </button>
+              <figcaption><strong>One spot is only the beginning.</strong><span>Compare boards and bet sizes across your report to uncover repeatable strategic patterns.</span></figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="solver-node-lock" id="solver-node-lock">
+          <div class="solver-feature-copy">
+            <p class="eyebrow">AI NODE LOCKING</p>
+            <h3>Your read.<br><span>A new strategy.</span></h3>
+            <p>Tell Fisher how your opponent plays. AI turns your read into a node lock, so you can re-solve the spot and study how to adjust.</p>
+            <ol class="solver-lock-steps">
+              <li><span class="solver-step-number">1</span><div><strong>Describe the tendency</strong><span>“My opponent folds too much on the river.”</span></div></li>
+              <li><span class="solver-step-number">2</span><div><strong>Review the lock</strong><span>Check the proposed changes before applying them.</span></div></li>
+              <li><span class="solver-step-number">3</span><div><strong>Re-solve. Explore the adjustment.</strong><span>Research an exploitative response to your assumption.</span></div></li>
+            </ol>
+          </div>
+          <div class="solver-lock-visual">
+            <button class="solver-lock-editor" type="button" data-solver-image="node-lock" aria-label="Enlarge the manual Node Lock editor screenshot">
+              <img src="assets/solver/node-lock-editor.webp" width="1684" height="1071" alt="Node Lock editor with an editable strategy matrix, action-frequency sliders and hand-category controls." loading="lazy">
+              <span class="solver-enlarge" aria-hidden="true">Explore the controls ↗</span>
+            </button>
+            <button class="solver-lock-request" type="button" data-solver-image="ai-lock" aria-label="View the AI node locking dialog screenshot">
+              <span class="solver-lock-dialog-header"><img src="assets/solver/ai-lock-dialog.webp" width="772" height="643" alt="Fisher AI lock current node dialog: review and then apply your changes." loading="lazy"></span>
+              <span class="solver-example-label">EXAMPLE REQUEST</span>
+              <span class="solver-lock-quote">“My opponent folds too much on the river.”</span>
+              <span class="solver-lock-request-footer">Start with your own words <span aria-hidden="true">↗</span></span>
+            </button>
+            <p class="solver-lock-caption">Natural language when you want it.<br>Detailed controls when you need them.</p>
+          </div>
+        </div>
+
+        <div class="solver-research-heading">
+          <p class="eyebrow">THE FULL PICTURE</p>
+          <h3>Go deeper than a single hand.</h3>
+          <p>Zoom in on the details. Step back to find the patterns.</p>
+        </div>
+        <div class="solver-research-grid">
+          <article class="solver-research-card">
+            <div class="solver-research-copy"><span class="solver-feature-tag">RANGES &amp; EQUITY</span><h4>Know where the<br>advantage comes from.</h4><p>Compare both ranges, follow the equity distribution, and examine how blockers change the decision.</p></div>
+            <button class="solver-research-image" type="button" data-solver-image="equity" aria-label="Explore the full range and equity screenshot">
+              <img src="assets/solver/equity-detail.webp" width="1425" height="1020" alt="Detail of the two range matrices, equity bands and blue and orange equity distribution curves." loading="lazy">
+              <span class="solver-image-link" aria-hidden="true">Explore range analysis ↗</span>
+            </button>
+          </article>
+          <article class="solver-research-card">
+            <div class="solver-research-copy"><span class="solver-feature-tag">CUSTOM AGGREGATE REPORTS</span><h4>Study the pattern.<br>Not just the spot.</h4><p>Build reports around your questions. Compare boards, action frequencies and bet sizes to discover what changes.</p></div>
+            <button class="solver-research-image" type="button" data-solver-image="reports" aria-label="Explore the full aggregate report screenshot">
+              <img src="assets/solver/report-detail.webp" width="1425" height="1000" alt="Detailed aggregate report rows comparing board textures and their checking and betting frequencies." loading="lazy">
+              <span class="solver-image-link" aria-hidden="true">Explore aggregate reports ↗</span>
+            </button>
+          </article>
+        </div>
+
+        <div class="solver-intelligence">
+          <div class="solver-intelligence-heading">
+            <p class="eyebrow">SOLVER DATA. POKER KNOWLEDGE. TOGETHER.</p>
+            <h3>The numbers tell a story.<br><span>Fisher helps you read it.</span></h3>
+            <p>Ask about the strategy in front of you. Fisher grounds its answers in actual solver results and a professional poker knowledge base, connecting what to play with why it works.</p>
+            <a class="solver-text-link" href="#coach">Meet your poker study partner <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="solver-insight">
+            <div class="solver-insight-question"><img src="assets/fisher-logo-blue.png" width="28" height="28" alt=""><p>“Why do these hands<br>prefer to check?”</p></div>
+            <button type="button" class="solver-insight-image" data-solver-image="groups" aria-label="Enlarge the strategy-group evidence screenshot"><img src="assets/solver/group-detail.webp" width="774" height="535" alt="Real solver hand and draw categories, including quads, full houses, trips and board pairs with their action distributions." loading="lazy"><span class="solver-image-link" aria-hidden="true">Look inside the strategy ↗</span></button>
+            <div class="solver-insight-sources"><span><i aria-hidden="true"></i>Actual solver results</span><span><i aria-hidden="true"></i>Poker knowledge base</span></div>
+          </div>
+        </div>
+        <div class="solver-analysis-features">
+          <article><span class="solver-analysis-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><rect x="5" y="8" width="16" height="20" rx="3"/><path d="M11 4h13a3 3 0 0 1 3 3v16M10 14h6m-6 5h6m-6 5h4"/></svg></span><div><h4>More hands. More perspective.</h4><p>Batch AI hand analysis helps you review multiple hands, connect recurring decisions and identify areas to study.</p><span>Batch hand analysis</span></div></article>
+          <article><span class="solver-analysis-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><circle cx="16" cy="11" r="5"/><path d="M6 27v-3a10 10 0 0 1 20 0v3M4 7l2-2m20 0 2 2"/></svg></span><div><h4>A clearer picture of your game.</h4><p>Player profile analysis helps you understand your tendencies, spot strategy leaks and focus your next study session.</p><span>Player profile analysis</span></div></article>
+        </div>
+        <div class="solver-closing"><p>Bring your questions.<br><span>Go further with the solver.</span></p><a class="button button-primary" href="https://gtofisher.com/solutions" target="_blank" rel="noopener">Explore Fisher Solver <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </section>
+
+    <div class="discovery">
+      <section class="case-section" id="examples" aria-labelledby="examples-title">
+        <div class="case-sticky">
+          <div class="discovery-heading container">
+            <h2 id="examples-title">See what happens<br>when you ask Fisher.</h2>
+          </div>
+          <div class="case-viewport" id="case-viewport" aria-label="Fisher demo cards">
+            <ul class="case-track container" id="case-track"></ul>
+          </div>
+          <p class="case-hint">Pick a story. See Fisher in action. <span aria-hidden="true">↗</span></p>
+        </div>
+      </section>
+      <section class="prompt-section" id="prompts" aria-labelledby="prompts-title">
+        <div class="prompt-heading container">
+          <div><p class="eyebrow">YOUR NEXT MOVE STARTS WITH A QUESTION.</p><h2 id="prompts-title">A few cards to get you started.</h2></div>
+        </div>
+        <div class="prompt-viewport" id="prompt-viewport" role="region" aria-label="Poker prompts. Select a card to copy its prompt." tabindex="0">
+          <ul class="prompt-track" id="prompt-track"></ul>
+        </div>
+        <div class="prompt-bottom container"><a href="#home">Back to Fisher <span aria-hidden="true">↑</span></a></div>
+        <p id="prompt-status" class="visually-hidden" role="status" aria-live="polite"></p>
+      </section>
+      <noscript><p class="discovery-noscript container">Explore the demos: <a href="assets/stories/coach.mp4">Hand review</a> · <a href="assets/stories/solver.mp4">Test a read</a> · <a href="assets/stories/analyst.mp4">Solve a spot</a> · <a href="assets/stories/training.mp4">Study plan</a>. Enable JavaScript to browse and copy prompt cards.</p></noscript>
+    </div>
+  </main>
+  <footer class="site-footer container"><a class="wordmark" href="#home"><img src="assets/fisher-logo.svg" alt="" width="24" height="24"><span>GTO <strong>Fisher</strong></span></a><p>Agent design preview <span>·</span> Product videos are placeholders</p><span class="footer-mark">PLAY. THINK. GROW.</span></footer>
+
+  <div class="preview-tools">
+    <div class="preview-panel" id="preview-panel" hidden>
+      <div class="preview-panel-title"><strong>Preview layers</strong><span>Design controls</span></div>
+      <label><span>Atmosphere<small>Intro light beams and chapter glows</small></span><input type="checkbox" data-layer="atmosphere" checked></label>
+      <label><span>Characters<small>Hero animation and four roles</small></span><input type="checkbox" data-layer="characters" checked></label>
+      <label><span>Product stories<small>Hero overview and chapter demos</small></span><input type="checkbox" data-layer="stories" checked></label>
+      <button id="motion-toggle" type="button" aria-pressed="false"><span aria-hidden="true">Ⅱ</span> Pause animations</button>
+      <p>Character and product videos can be replaced independently.</p>
+    </div>
+    <button class="preview-toggle" aria-expanded="false" aria-controls="preview-panel" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 9 5-9 5-9-5 9-5ZM3 12l9 5 9-5M3 16l9 5 9-5"/></svg><span>Preview layers</span></button>
+  </div>
+
+  <dialog id="story-dialog" aria-labelledby="dialog-title"><div class="dialog-header"><div><p class="eyebrow">FISHER IN ACTION</p><h2 id="dialog-title">Personal Coach</h2></div><button class="dialog-close" aria-label="Close demo" type="button">×</button></div><video id="dialog-video" controls muted playsinline preload="none"></video><p class="dialog-note">This existing Fisher demo is a placeholder for the final product story.</p></dialog>
+  <dialog id="prompt-copy-dialog" aria-labelledby="prompt-copy-title"><div class="dialog-header"><h2 id="prompt-copy-title">Your next question.</h2><button class="dialog-close" type="button" data-close-prompt aria-label="Close prompt">×</button></div><p>Select and copy this prompt, then make it your own in Fisher.</p><textarea id="prompt-copy-text" aria-label="Prompt to copy" readonly rows="4"></textarea></dialog>
+  <dialog class="solver-image-dialog" id="solver-image-dialog" aria-labelledby="solver-image-title">
+    <div class="solver-dialog-header"><div><p class="eyebrow">INSIDE FISHER SOLVER</p><h2 id="solver-image-title">Strategy workspace</h2></div><button type="button" class="solver-dialog-close" aria-label="Close solver screenshot">×</button></div>
+    <div class="solver-dialog-image-wrap"><img id="solver-dialog-image" alt=""></div>
+    <p class="solver-dialog-caption">Actual GTO Fisher product interface.</p>
+  </dialog>
+  <noscript><p class="noscript-note">Enable JavaScript to watch the character animations and product demos. You can still scroll to read about each role.</p></noscript>
+</body>
+</html>

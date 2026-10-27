@@ -1,0 +1,127 @@
+{
+  "preparedAt": "2026-10-14",
+  "purpose": "Local Fisher Agent showcase preview",
+  "hero": {
+    "sourceRoot": "D:/landpage/outputs/uniart-videos/fisher-hero-boat-loop-v3",
+    "sourceArchive": "fisher-boat-loop-v3.zip",
+    "sourceClip": "fisher-boat-full-loop-15s-transparent.webm",
+    "processingScript": "refine-matte.py",
+    "revision": "clean alpha v4",
+    "dimensions": [
+      1080,
+      1080
+    ],
+    "fps": 30,
+    "durationSeconds": 15,
+    "loop": true,
+    "sequence": "Loop the complete 15-second entrance and return-to-boat clip",
+    "processing": "Local RGBA cleanup of enclosed navy background islands and dark contour debris; preserve pupils and interior shading. No changes to timing, framing, or motion.",
+    "verification": "qa/matte-revision/verification-clean-alpha-v4.json",
+    "files": {
+      "hero/boat-loop-clean-v4.webm": "fisher-boat-full-loop-15s-clean-alpha-v4.webm",
+      "hero/boat-loop-clean-v4.mp4": "fisher-boat-full-loop-15s-clean-alpha-v4.mp4"
+    },
+    "posters": {
+      "hero/boat-loop-clean-v4-poster.png": {
+        "source": "fisher-clean-alpha-v4-poster.png",
+        "method": "The first source RGBA frame cleaned by refine-matte.py before encoding, alpha preserved"
+      }
+    }
+  },
+  "characters": {
+    "sourceRoot": "D:/landpage/outputs/uniart-videos/fisher-role-loops-v1",
+    "durationSecondsEach": 5,
+    "dimensions": [
+      1080,
+      1080
+    ],
+    "fps": 30,
+    "loop": true,
+    "transparent": false,
+    "background": "#061426",
+    "roles": {
+      "C2": "复盘教练",
+      "S1": "Solver 专家",
+      "A3": "策略分析师",
+      "T1": "AI 陪练"
+    },
+    "files": {
+      "roles/C2.mp4": "C2/fisher-C2-loop-5s.mp4",
+      "roles/C2.png": "C2/loop-first.png",
+      "roles/S1.mp4": "S1/fisher-S1-loop-5s.mp4",
+      "roles/S1.png": "S1/loop-first.png",
+      "roles/A3.mp4": "A3/fisher-A3-loop-5s.mp4",
+      "roles/A3.png": "A3/loop-first.png",
+      "roles/T1.mp4": "T1/fisher-T1-loop-5s.mp4",
+      "roles/T1.png": "T1/loop-first.png"
+    }
+  },
+  "productStoryPlaceholders": {
+    "sourceRoot": "D:/fisher 定价页 设计/assets/landing/gto-landing-assets/01-delivery",
+    "status": "All four story videos are existing Fisher clips used as placeholders; replace with final capability-specific edits",
+    "clips": [
+      {
+        "role": "C2",
+        "id": "coach",
+        "sourceDescription": "Existing single-hand review demonstration",
+        "files": {
+          "stories/coach.mp4": "videos/agent-review.mp4",
+          "stories/coach-mobile.mp4": "videos/agent-review-mobile.mp4",
+          "stories/coach.jpg": "images/agent-review-poster.jpg",
+          "stories/coach-mobile.jpg": "images/agent-review-mobile-poster.jpg"
+        }
+      },
+      {
+        "role": "S1",
+        "id": "solver",
+        "sourceDescription": "Existing exploit strategy demonstration",
+        "files": {
+          "stories/solver.mp4": "videos/agent-exploit.mp4",
+          "stories/solver-mobile.mp4": "videos/agent-exploit-mobile.mp4",
+          "stories/solver.jpg": "images/agent-exploit-poster.jpg",
+          "stories/solver-mobile.jpg": "images/agent-exploit-mobile-poster.jpg"
+        }
+      },
+      {
+        "role": "A3",
+        "id": "analyst",
+        "sourceDescription": "Existing solver demonstration, not the intended turn aggregation report",
+        "replacementRequired": "Replace with Fisher running and explaining a turn-card aggregate report",
+        "files": {
+          "stories/analyst.mp4": "videos/agent-solve.mp4",
+          "stories/analyst-mobile.mp4": "videos/agent-solve-mobile.mp4",
+          "stories/analyst.jpg": "images/agent-solve-poster.jpg",
+          "stories/analyst-mobile.jpg": "images/agent-solve-mobile-poster.jpg"
+        }
+      },
+      {
+        "role": "T1",
+        "id": "training",
+        "sourceDescription": "Existing training plan demonstration, not the intended in-hand training companion",
+        "replacementRequired": "Replace with in-hand feedback and contextual Fisher questions during training",
+        "files": {
+          "stories/training.mp4": "videos/agent-training.mp4",
+          "stories/training-mobile.mp4": "videos/agent-training-mobile.mp4",
+          "stories/training.jpg": "images/agent-training-poster.jpg",
+          "stories/training-mobile.jpg": "images/agent-training-mobile-poster.jpg"
+        }
+      }
+    ]
+  },
+  "atmosphere": {
+    "sourceRoot": "D:/fisher 定价页 设计/app/public/media/atmosphere",
+    "provenanceNote": "atmosphere/SOURCE.md",
+    "sourceSummary": "Existing pricing preview assets. SOURCE.md records original n8n sources; copied unchanged for this local design preview.",
+    "files": {
+      "atmosphere/rays.mp4": "rays.mp4",
+      "atmosphere/rays-poster.jpg": "rays-poster.jpg",
+      "atmosphere/grain.png": "grain.png",
+      "atmosphere/pricing-halo.png": "pricing-halo.png",
+      "atmosphere/SOURCE.md": "SOURCE.md"
+    }
+  },
+  "brandFiles": {
+    "inter.woff2": "D:/fisher 定价页 设计/assets/landing/gto-landing-assets/04-fonts-and-licenses/fonts/inter-latin.woff2",
+    "fisher-logo.png": "D:/fisher 定价页 设计/app/public/img/fisher-logo-transparent.png"
+  }
+}
